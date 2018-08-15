@@ -1,0 +1,9 @@
+
+.response > .header {
+  cursor: pointer;
+}
+
+.response > .title {
+  margin-right: 1em;
+  cursor: pointer;
+}

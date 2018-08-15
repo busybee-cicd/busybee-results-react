@@ -1,0 +1,18 @@
+.rest-test {
+  box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
+}
+
+.rest-test > .test-header {
+  background-color: black;
+  color: white;
+  padding: 0 .5em 0 .5em;
+  cursor: pointer;
+}
+
+.test-header > .title {
+  margin-right: 1em;
+}
+
+.rest-test > .test-body {
+  padding: 0 .5em 0 .5em;
+}

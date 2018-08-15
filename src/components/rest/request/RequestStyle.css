@@ -1,0 +1,9 @@
+
+.request > .header {
+  cursor: pointer;
+}
+
+.request > .title {
+  margin-right: 1em;
+  cursor: pointer;
+}
