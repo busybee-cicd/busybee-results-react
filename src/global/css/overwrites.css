@@ -1,0 +1,17 @@
+/*
+ This will not be processed as a scoped module by postcss. allows us to override globally-scoped css provided by imported modules
+*/
+
+.jsondiffpatch-deleted .jsondiffpatch-property-name, .jsondiffpatch-deleted pre, .jsondiffpatch-modified .jsondiffpatch-left-value pre, .jsondiffpatch-textdiff-deleted {
+    background: #ffbbbb;
+    text-decoration: none;
+}
+
+.nav-tabs .nav-item {
+  cursor: pointer;
+  margin-bottom: -1px;
+}
+
+.tab-pane {
+  padding: 1em;
+}

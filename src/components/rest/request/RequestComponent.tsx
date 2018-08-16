@@ -2,11 +2,11 @@
  * @class ExampleComponent
  */
 
-import * as React from 'react'
+import cx from 'classnames';
+import * as React from 'react';
+import ReactJson from 'react-json-view';
 import { Collapse } from 'reactstrap';
 import style from './RequestStyle.css';
-import cx from 'classnames';
-import ReactJson from 'react-json-view'
 
 export interface RequestComponentProps {
   request: any

@@ -29,7 +29,7 @@ export default class RESTTestComponent extends React.Component<RESTTestComponent
     this.setState({isOpen: !this.state.isOpen});
   }
 
-  getTitleStatus() {
+  getPassStatus() {
     let icon = this.props.test.pass ? faCheckCircle : faExclamationCircle;
     let color = this.props.test.pass ? 'green' : 'red';
 
@@ -43,7 +43,7 @@ export default class RESTTestComponent extends React.Component<RESTTestComponent
       <div className={style.restTest}>
         <div className={cx(style.testHeader, 'd-flex', 'align-items-center')} onClick={this.toggleOpen.bind(this)}>
           <div className={style.title}>{test.id}</div>
-          {this.getTitleStatus()}
+          {this.getPassStatus()}
         </div>
         <Collapse className={style.testBody} isOpen={this.state.isOpen}>
           <RequestComponent request={test.request}/>

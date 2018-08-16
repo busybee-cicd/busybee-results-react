@@ -25,7 +25,10 @@ export default {
   plugins: [
     external(),
     postcss({
-      modules: true,
+      modules: {
+        scopeBehaviour: 'local',
+        globalModulePaths: [/node_modules/, /src\/global\/css/]
+      },
       writeDefinitions: true
     }),
     // sass(),

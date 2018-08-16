@@ -2,7 +2,7 @@
  * @class ExampleComponent
  */
 require('bootstrap/dist/css/bootstrap.min.css');
-
+import './global/css/overwrites.css';
 import * as React from 'react';
 import './index.css';
 import TestSuiteComponent from './components/TestSuiteComponent';
