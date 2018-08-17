@@ -26,7 +26,7 @@ export default class StatusComponent extends React.Component<DiffComponentProps,
   render() {
     return (
       <div className={cx(style.status, 'd-flex flex-column')}>
-        <div className={cx(style.nav, 'd-flex flex-row-reverse')}>
+        <div className={cx(style.nav, 'd-flex')}>
           <FormGroup check>
             <Label check>
               <Input

@@ -58,7 +58,7 @@ const json =
                                       "content-type": "application/json"
                                   },
                                   {
-                                      "date": "Tue, 14 Aug 2018 19:09:52 GMT"
+                                      "date": "Thu, 16 Aug 2018 19:14:15 GMT"
                                   },
                                   {
                                       "connection": "close"
@@ -67,7 +67,6 @@ const json =
                                       "transfer-encoding": "chunked"
                                   }
                               ],
-                              "expected": [],
                               "pass": true
                           },
                           "id": "body assertion",
@@ -95,7 +94,7 @@ const json =
                                       "content-type": "application/json"
                                   },
                                   {
-                                      "date": "Tue, 14 Aug 2018 19:09:52 GMT"
+                                      "date": "Thu, 16 Aug 2018 19:14:15 GMT"
                                   },
                                   {
                                       "connection": "close"
@@ -104,7 +103,6 @@ const json =
                                       "transfer-encoding": "chunked"
                                   }
                               ],
-                              "expected": [],
                               "pass": true
                           },
                           "id": "status assertion",
@@ -163,7 +161,7 @@ const json =
                                       "content-type": "application/json"
                                   },
                                   {
-                                      "date": "Tue, 14 Aug 2018 19:09:55 GMT"
+                                      "date": "Thu, 16 Aug 2018 19:14:18 GMT"
                                   },
                                   {
                                       "connection": "close"
@@ -172,7 +170,6 @@ const json =
                                       "transfer-encoding": "chunked"
                                   }
                               ],
-                              "expected": [],
                               "pass": true
                           },
                           "id": "body assertion",
@@ -200,7 +197,7 @@ const json =
                                       "content-type": "application/json"
                                   },
                                   {
-                                      "date": "Tue, 14 Aug 2018 19:09:55 GMT"
+                                      "date": "Thu, 16 Aug 2018 19:14:18 GMT"
                                   },
                                   {
                                       "connection": "close"
@@ -209,7 +206,6 @@ const json =
                                       "transfer-encoding": "chunked"
                                   }
                               ],
-                              "expected": [],
                               "pass": true
                           },
                           "id": "status assertion",
@@ -268,7 +264,7 @@ const json =
                                       "content-type": "application/json"
                                   },
                                   {
-                                      "date": "Tue, 14 Aug 2018 19:09:58 GMT"
+                                      "date": "Thu, 16 Aug 2018 19:14:21 GMT"
                                   },
                                   {
                                       "connection": "close"
@@ -277,7 +273,6 @@ const json =
                                       "transfer-encoding": "chunked"
                                   }
                               ],
-                              "expected": [],
                               "pass": true
                           },
                           "id": "body assertion",
@@ -305,7 +300,7 @@ const json =
                                       "content-type": "application/json"
                                   },
                                   {
-                                      "date": "Tue, 14 Aug 2018 19:09:58 GMT"
+                                      "date": "Thu, 16 Aug 2018 19:14:21 GMT"
                                   },
                                   {
                                       "connection": "close"
@@ -314,7 +309,6 @@ const json =
                                       "transfer-encoding": "chunked"
                                   }
                               ],
-                              "expected": [],
                               "pass": true
                           },
                           "id": "status assertion",
@@ -373,7 +367,7 @@ const json =
                                       "content-type": "application/json"
                                   },
                                   {
-                                      "date": "Tue, 14 Aug 2018 19:10:01 GMT"
+                                      "date": "Thu, 16 Aug 2018 19:14:24 GMT"
                                   },
                                   {
                                       "connection": "close"
@@ -382,7 +376,6 @@ const json =
                                       "transfer-encoding": "chunked"
                                   }
                               ],
-                              "expected": [],
                               "pass": true
                           },
                           "id": "body assertion",
@@ -410,7 +403,7 @@ const json =
                                       "content-type": "application/json"
                                   },
                                   {
-                                      "date": "Tue, 14 Aug 2018 19:10:01 GMT"
+                                      "date": "Thu, 16 Aug 2018 19:14:24 GMT"
                                   },
                                   {
                                       "connection": "close"
@@ -419,7 +412,6 @@ const json =
                                       "transfer-encoding": "chunked"
                                   }
                               ],
-                              "expected": [],
                               "pass": true
                           },
                           "id": "status assertion",
@@ -466,6 +458,6 @@ const json =
           "type": "USER_PROVIDED"
       }
   ],
-  "runId": "9c4d0fa0-9ff5-11e8-ae03-59b6c008cfd6",
-  "runTimestamp": 1534273787290
+  "runId": "8e133dd0-a188-11e8-9b6e-17c0db374515",
+  "runTimestamp": 1534446850605
 };

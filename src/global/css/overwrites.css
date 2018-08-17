@@ -15,3 +15,11 @@
 .tab-pane {
   padding: 1em;
 }
+
+
+.btn-group-xs>.btn, .btn-xs {
+  padding: .15rem .5rem;
+  font-size: .875rem;
+  line-height: 1.5;
+  border-radius: .2rem;
+}

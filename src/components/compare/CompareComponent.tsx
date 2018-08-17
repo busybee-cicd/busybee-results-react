@@ -3,6 +3,8 @@ import DiffComponent from './DiffComponent';
 import SideBySideComponent from './SideBySideComponent';
 import { Button, ButtonGroup } from 'reactstrap';
 import cx from 'classnames';
+import style from './CompareStyle.css';
+import * as _ from 'lodash';
 
 export interface CompareComponentProps {
   expected: any,
@@ -33,7 +35,7 @@ export default class CompareComponent extends React.Component<CompareComponentPr
 
     return (
       <Button
-        size='sm'
+        size='xs'
         color="error"
         onClick={() => this.setState({selected: 'error'})}
         active={this.state.selected === 'error'}>Error</Button>
@@ -86,19 +88,34 @@ export default class CompareComponent extends React.Component<CompareComponentPr
 
   render() {
 
-    return (
-      <div className='d-flex flex-column'>
-        <div className='d-flex flex-row-reverse'>
-          <ButtonGroup>
-            <Button
-              size='sm'
-              color="info"
-              onClick={() => this.setState({selected: 'sideBySide'})}
-              active={this.state.selected === 'sideBySide'}>side-by-side</Button>
-            {this.getDiffBtn()}
-            {this.getErrorBtn()}
+    let Nav;
+    let NavBtns = _.reject([this.getDiffBtn(), this.getErrorBtn()], (i) => i === undefined);
+
+    if (NavBtns.length > 0) {
+      console.log(NavBtns);
+      // only display sideBySideBtn if it's not the only option
+      let SideBySideBtn = (
+        <Button
+          color="info"
+          onClick={() => this.setState({selected: 'sideBySide'})}
+          active={this.state.selected === 'sideBySide'}>side-by-side</Button>
+      );
+
+      NavBtns.unshift(SideBySideBtn);
+
+      Nav = (
+        <div className={cx(style.nav, 'd-flex flex-row')}>
+          <ButtonGroup size='xs'>
+            {NavBtns}
           </ButtonGroup>
         </div>
+      )
+    }
+
+
+    return (
+      <div className='d-flex flex-column'>
+        {Nav}
         <div className='d-flex flex-row'>
           {this.getSideBySideComponent()}
           {this.getDiffComponent()}

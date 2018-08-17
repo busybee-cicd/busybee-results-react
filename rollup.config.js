@@ -37,6 +37,10 @@ export default {
     typescript({
       rollupCommonJSResolveHack: true
     }),
-    commonjs()
+    commonjs({
+      namedExports: {
+        'node_modules/lodash/lodash.js': ['isEmpty', 'reject']
+      }
+    })
   ]
 }

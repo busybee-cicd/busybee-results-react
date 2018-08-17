@@ -32,7 +32,7 @@ export default class RequestComponent extends React.Component<RequestComponentPr
 
   render() {
     return (
-      <div className={cx(style.request, 'flex-column')}>
+      <div className={cx('flex-column')}>
         <div className={cx(style.header, 'd-flex', 'align-items-center')} onClick={this.toggleOpen.bind(this)}>
           Request
         </div>
