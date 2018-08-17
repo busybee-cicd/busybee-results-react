@@ -1,4 +1,4 @@
 declare namespace index {
-	const test: string
+	const brand: string
 }
 export default index

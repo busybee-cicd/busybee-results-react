@@ -18,7 +18,7 @@ export default class TestSuiteComponent extends React.Component<TestSuiteCompone
     return (
       <Container>
         <Row>
-          <h1>{ts.id}</h1>
+          <h2>{ts.id}</h2>
         </Row>
         {Sets}
       </Container>

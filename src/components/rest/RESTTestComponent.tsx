@@ -1,11 +1,10 @@
-import * as React from 'react'
-import { Collapse } from 'reactstrap';
-import style from './RESTTestStyle.css';
 import cx from 'classnames';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheckCircle, faExclamationCircle } from '@fortawesome/free-solid-svg-icons'
+import * as React from 'react';
+import { Collapse } from 'reactstrap';
+import PassFailIconComponent from '../PassFailIconComponent';
 import RequestComponent from './request/RequestComponent';
 import ResponseComponent from './response/ResponseComponent';
+import style from './RESTTestStyle.css';
 
 export interface RESTTestComponentProps {
   test: any
@@ -29,13 +28,6 @@ export default class RESTTestComponent extends React.Component<RESTTestComponent
     this.setState({isOpen: !this.state.isOpen});
   }
 
-  getPassStatus() {
-    let icon = this.props.test.pass ? faCheckCircle : faExclamationCircle;
-    let color = this.props.test.pass ? 'green' : 'red';
-
-    return <FontAwesomeIcon icon={icon} style={{color}} />
-  }
-
   render() {
     const test = this.props.test;
 
@@ -43,7 +35,7 @@ export default class RESTTestComponent extends React.Component<RESTTestComponent
       <div className={style.restTest}>
         <div className={cx(style.testHeader, 'd-flex', 'align-items-center')} onClick={this.toggleOpen.bind(this)}>
           <div className={style.title}>{test.id}</div>
-          {this.getPassStatus()}
+          <PassFailIconComponent pass={this.props.test.pass} />
         </div>
         <Collapse className={style.testBody} isOpen={this.state.isOpen}>
           <RequestComponent request={test.request}/>

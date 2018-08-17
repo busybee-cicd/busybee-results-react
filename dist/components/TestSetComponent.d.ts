@@ -8,7 +8,6 @@ interface TestSetComponentState {
 }
 export default class TestSetComponent extends React.Component<TestSetComponentProps, TestSetComponentState> {
     constructor(props: TestSetComponentProps);
-    getTitleStatus(): JSX.Element;
     toggleOpen(): void;
     render(): JSX.Element;
 }

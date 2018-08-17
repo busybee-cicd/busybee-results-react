@@ -22,7 +22,6 @@ export default class CompareComponent extends React.Component<CompareComponentPr
   constructor(props:CompareComponentProps) {
     super(props);
 
-    console.log(JSON.stringify(props));
     this.state = {
       selected: 'sideBySide'
     }
@@ -92,7 +91,6 @@ export default class CompareComponent extends React.Component<CompareComponentPr
     let NavBtns = _.reject([this.getDiffBtn(), this.getErrorBtn()], (i) => i === undefined);
 
     if (NavBtns.length > 0) {
-      console.log(NavBtns);
       // only display sideBySideBtn if it's not the only option
       let SideBySideBtn = (
         <Button

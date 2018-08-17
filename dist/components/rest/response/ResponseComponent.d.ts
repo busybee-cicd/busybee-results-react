@@ -13,7 +13,8 @@ export default class ResponseComponent extends React.Component<ResponseComponent
     toggleOpen(): void;
     selectTab(tab: string): void;
     getPassIcon(pass: boolean): JSX.Element;
-    getTab(tabId: string): any;
+    getNavItem(partName: string): JSX.Element | undefined;
+    getTab(partName: string): any;
     render(): JSX.Element;
 }
 export {};

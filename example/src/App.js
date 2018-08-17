@@ -52,23 +52,6 @@ const json =
                               },
                               "pass": true
                           },
-                          "headers": {
-                              "actual": [
-                                  {
-                                      "content-type": "application/json"
-                                  },
-                                  {
-                                      "date": "Thu, 16 Aug 2018 19:14:15 GMT"
-                                  },
-                                  {
-                                      "connection": "close"
-                                  },
-                                  {
-                                      "transfer-encoding": "chunked"
-                                  }
-                              ],
-                              "pass": true
-                          },
                           "id": "body assertion",
                           "pass": true,
                           "request": {
@@ -78,33 +61,9 @@ const json =
                               "simple": false,
                               "timeout": 30000,
                               "url": "http://localhost:7777/body-assertion"
-                          },
-                          "status": {
-                              "actual": 200,
-                              "pass": true
                           }
                       },
                       {
-                          "body": {
-                              "pass": true
-                          },
-                          "headers": {
-                              "actual": [
-                                  {
-                                      "content-type": "application/json"
-                                  },
-                                  {
-                                      "date": "Thu, 16 Aug 2018 19:14:15 GMT"
-                                  },
-                                  {
-                                      "connection": "close"
-                                  },
-                                  {
-                                      "transfer-encoding": "chunked"
-                                  }
-                              ],
-                              "pass": true
-                          },
                           "id": "status assertion",
                           "pass": true,
                           "request": {
@@ -155,23 +114,6 @@ const json =
                               },
                               "pass": true
                           },
-                          "headers": {
-                              "actual": [
-                                  {
-                                      "content-type": "application/json"
-                                  },
-                                  {
-                                      "date": "Thu, 16 Aug 2018 19:14:18 GMT"
-                                  },
-                                  {
-                                      "connection": "close"
-                                  },
-                                  {
-                                      "transfer-encoding": "chunked"
-                                  }
-                              ],
-                              "pass": true
-                          },
                           "id": "body assertion",
                           "pass": true,
                           "request": {
@@ -181,33 +123,9 @@ const json =
                               "simple": false,
                               "timeout": 30000,
                               "url": "http://localhost:7778/body-assertion"
-                          },
-                          "status": {
-                              "actual": 200,
-                              "pass": true
                           }
                       },
                       {
-                          "body": {
-                              "pass": true
-                          },
-                          "headers": {
-                              "actual": [
-                                  {
-                                      "content-type": "application/json"
-                                  },
-                                  {
-                                      "date": "Thu, 16 Aug 2018 19:14:18 GMT"
-                                  },
-                                  {
-                                      "connection": "close"
-                                  },
-                                  {
-                                      "transfer-encoding": "chunked"
-                                  }
-                              ],
-                              "pass": true
-                          },
                           "id": "status assertion",
                           "pass": true,
                           "request": {
@@ -258,23 +176,6 @@ const json =
                               },
                               "pass": true
                           },
-                          "headers": {
-                              "actual": [
-                                  {
-                                      "content-type": "application/json"
-                                  },
-                                  {
-                                      "date": "Thu, 16 Aug 2018 19:14:21 GMT"
-                                  },
-                                  {
-                                      "connection": "close"
-                                  },
-                                  {
-                                      "transfer-encoding": "chunked"
-                                  }
-                              ],
-                              "pass": true
-                          },
                           "id": "body assertion",
                           "pass": true,
                           "request": {
@@ -284,33 +185,9 @@ const json =
                               "simple": false,
                               "timeout": 30000,
                               "url": "http://localhost:7777/body-assertion"
-                          },
-                          "status": {
-                              "actual": 200,
-                              "pass": true
                           }
                       },
                       {
-                          "body": {
-                              "pass": true
-                          },
-                          "headers": {
-                              "actual": [
-                                  {
-                                      "content-type": "application/json"
-                                  },
-                                  {
-                                      "date": "Thu, 16 Aug 2018 19:14:21 GMT"
-                                  },
-                                  {
-                                      "connection": "close"
-                                  },
-                                  {
-                                      "transfer-encoding": "chunked"
-                                  }
-                              ],
-                              "pass": true
-                          },
                           "id": "status assertion",
                           "pass": true,
                           "request": {
@@ -361,23 +238,6 @@ const json =
                               },
                               "pass": true
                           },
-                          "headers": {
-                              "actual": [
-                                  {
-                                      "content-type": "application/json"
-                                  },
-                                  {
-                                      "date": "Thu, 16 Aug 2018 19:14:24 GMT"
-                                  },
-                                  {
-                                      "connection": "close"
-                                  },
-                                  {
-                                      "transfer-encoding": "chunked"
-                                  }
-                              ],
-                              "pass": true
-                          },
                           "id": "body assertion",
                           "pass": true,
                           "request": {
@@ -387,33 +247,9 @@ const json =
                               "simple": false,
                               "timeout": 30000,
                               "url": "http://localhost:7778/body-assertion"
-                          },
-                          "status": {
-                              "actual": 200,
-                              "pass": true
                           }
                       },
                       {
-                          "body": {
-                              "pass": true
-                          },
-                          "headers": {
-                              "actual": [
-                                  {
-                                      "content-type": "application/json"
-                                  },
-                                  {
-                                      "date": "Thu, 16 Aug 2018 19:14:24 GMT"
-                                  },
-                                  {
-                                      "connection": "close"
-                                  },
-                                  {
-                                      "transfer-encoding": "chunked"
-                                  }
-                              ],
-                              "pass": true
-                          },
                           "id": "status assertion",
                           "pass": true,
                           "request": {
@@ -458,6 +294,6 @@ const json =
           "type": "USER_PROVIDED"
       }
   ],
-  "runId": "8e133dd0-a188-11e8-9b6e-17c0db374515",
-  "runTimestamp": 1534446850605
+  "runId": "2c20bdb0-a240-11e8-a01a-f5a56da9374b",
+  "runTimestamp": 1534525713674
 };

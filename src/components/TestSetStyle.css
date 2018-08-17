@@ -4,7 +4,7 @@
 }
 
 .test-set > .header {
-  background-color:#7DE3FF;
+  background-color:rgb(77, 170, 196);
   color: white;
   padding: 0 .5em 0 .5em;
   cursor: pointer;
@@ -12,4 +12,20 @@
 
 .test-set > .header > .title {
   margin-right: 1em;
+}
+
+
+.error {
+  display: inherit;
+}
+
+.error > .header {
+  padding: .15rem .5rem;
+  background-color: lightcoral;
+  color: white;
+}
+
+.error > .stack {
+  padding: .15rem .5rem;
+  display: inherit;
 }

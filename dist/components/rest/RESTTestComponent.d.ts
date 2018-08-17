@@ -8,7 +8,6 @@ interface RESTTestComponentState {
 export default class RESTTestComponent extends React.Component<RESTTestComponentProps, RESTTestComponentState> {
     constructor(props: RESTTestComponentProps);
     toggleOpen(): void;
-    getPassStatus(): JSX.Element;
     render(): JSX.Element;
 }
 export {};

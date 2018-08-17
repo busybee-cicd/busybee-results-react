@@ -39,7 +39,7 @@ export default {
     }),
     commonjs({
       namedExports: {
-        'node_modules/lodash/lodash.js': ['isEmpty', 'reject']
+        'node_modules/lodash/lodash.js': ['isEmpty', 'reject', 'upperFirst']
       }
     })
   ]

@@ -9,6 +9,11 @@ export interface BusybeeTestResults {
 export interface BusybeeTestResultsComponentProps {
     results: BusybeeTestResults;
 }
-export default class BusybeeTestResultsComponent extends React.Component<BusybeeTestResultsComponentProps> {
+interface BusybeeTestResultState {
+    selectedTestSuiteIndex: number;
+}
+export default class BusybeeTestResultsComponent extends React.Component<BusybeeTestResultsComponentProps, BusybeeTestResultState> {
+    constructor(props: BusybeeTestResultsComponentProps);
     render(): JSX.Element;
 }
+export {};

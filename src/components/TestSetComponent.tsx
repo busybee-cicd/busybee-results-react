@@ -1,10 +1,9 @@
-import * as React from 'react'
-import RESTTestComponent from './rest/RESTTestComponent';
-import { Collapse, Row } from 'reactstrap';
-import style from './TestSetStyle.css';
 import cx from 'classnames';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheckCircle, faExclamationCircle } from '@fortawesome/free-solid-svg-icons'
+import * as React from 'react';
+import { Collapse, Row } from 'reactstrap';
+import PassFailIconComponent from './PassFailIconComponent';
+import RESTTestComponent from './rest/RESTTestComponent';
+import style from './TestSetStyle.css';
 
 export interface TestSetComponentProps {
   suiteType: string,
@@ -25,13 +24,6 @@ export default class TestSetComponent extends React.Component<TestSetComponentPr
     }
   }
 
-  getTitleStatus() {
-    let icon = this.props.set.pass ? faCheckCircle : faExclamationCircle;
-    let color = this.props.set.pass ? 'green' : 'red';
-
-    return <FontAwesomeIcon icon={icon} style={{color}} />
-  }
-
   toggleOpen() {
     this.setState({isOpen: !this.state.isOpen});
   }
@@ -48,15 +40,30 @@ export default class TestSetComponent extends React.Component<TestSetComponentPr
       });
     }
 
+    let Errors;
+    if (this.props.set.error) {
+      Errors = (
+        <div className={cx(style.error, 'd-flex flex-column')}>
+          <div className={cx(style.header)}>
+            {this.props.set.error.message}
+          </div>
+          <div className={cx(style.stack)}>
+            {this.props.set.error.stack}
+          </div>
+        </div>
+      )
+    }
+
     return (
       <Row>
         <div className={cx(style.testSet, 'd-flex', 'w-100', 'flex-column')}>
           <div className={cx(style.header, 'd-flex', 'align-items-center', 'w-100')} onClick={this.toggleOpen.bind(this)}>
             <div className={style.title}>{ts.id}</div>
-            {this.getTitleStatus()}
+            <PassFailIconComponent pass={this.props.set.pass} />
           </div>
           <Collapse isOpen={this.state.isOpen}>
             {Tests}
+            {Errors}
           </Collapse>
         </div>
       </Row>
