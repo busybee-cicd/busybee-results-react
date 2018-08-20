@@ -37,15 +37,15 @@
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",
-    "react": "^15.0.0 || ^16.0.0",
-    "react-dom": "^15.0.0 || ^16.0.0"
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
   },
   "devDependencies": {
     "@types/classnames": "^2.2.6",
     "@types/jest": "^23.1.5",
     "@types/lodash": "^4.14.116",
-    "@types/react": "16.4.7",
-    "@types/react-dom": "^16.0.5",
+    "@types/react": "16.4.11",
+    "@types/react-dom": "16.0.7",
     "@types/reactstrap": "^6.0.2",
     "babel-core": "^6.26.3",
     "babel-runtime": "^6.26.0",
