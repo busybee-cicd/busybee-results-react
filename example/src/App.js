@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import 'bootstrap/dist/css/bootstrap.css';
 import ExampleComponent from 'busybee-result-react'
 
 export default class App extends Component {
