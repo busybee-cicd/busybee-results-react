@@ -6,8 +6,6 @@
   "license": "MIT",
   "repository": "git@github.build.ge.com:Busybee/busybee-results-react.git",
   "main": "dist/index.js",
-  "module": "dist/index.es.js",
-  "jsnext:main": "dist/index.es.js",
   "engines": {
     "node": ">=8",
     "npm": ">=5"
