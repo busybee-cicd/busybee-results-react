@@ -1,6 +1,6 @@
 {
   "name": "busybee-results-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a component for rendering a BusybeeTestResults object",
   "author": "stowns",
   "license": "MIT",
@@ -15,8 +15,6 @@
     "test:watch": "react-scripts-ts test --env=jsdom",
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "prepare": "yarn run build",
-    "predeploy": "cd example && yarn install && yarn run build",
     "deploy": "gh-pages -d example/build"
   },
   "dependencies": {
