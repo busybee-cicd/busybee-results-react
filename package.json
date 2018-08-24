@@ -1,6 +1,6 @@
 {
   "name": "busybee-results-react",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a component for rendering a BusybeeTestResults object",
   "author": "stowns",
   "license": "MIT",
