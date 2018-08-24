@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
-import ExampleComponent from 'busybee-result-react'
+import ExampleComponent from 'busybee-results-react'
 
 export default class App extends Component {
   render () {
@@ -12,12 +12,11 @@ export default class App extends Component {
   }
 }
 
-const json =
-{
+const json = {
   "data": [
       {
           "id": "REST TestSuite",
-          "pass": true,
+          "pass": false,
           "testSets": [
               {
                   "id": "ts1",
@@ -82,8 +81,8 @@ const json =
                   ]
               },
               {
-                  "id": "ts1",
-                  "pass": true,
+                  "id": "ts2",
+                  "pass": false,
                   "tests": [
                       {
                           "body": {
@@ -112,10 +111,15 @@ const json =
                                       }
                                   }
                               },
-                              "pass": true
+                              "error": {
+                                  "error": "you should see this error!",
+                                  "stack": "Error: you should see this error!\n    at RESTTestExpect.body (/Users/212589146/dev/busybee/busybee/test/IT/fixtures/mixed-test-suite-type/REST/test/ts2/body-assertion.js:15:17)\n    at RESTSuiteManager.validateTestResult (/Users/212589146/dev/busybee/busybee/src/managers/RESTSuiteManager.ts:380:40)\n    at RESTSuiteManager.<anonymous> (/Users/212589146/dev/busybee/busybee/src/managers/RESTSuiteManager.ts:170:16)\n    at step (/Users/212589146/dev/busybee/busybee/dist/src/managers/RESTSuiteManager.js:32:23)\n    at Object.next (/Users/212589146/dev/busybee/busybee/dist/src/managers/RESTSuiteManager.js:13:53)\n    at fulfilled (/Users/212589146/dev/busybee/busybee/dist/src/managers/RESTSuiteManager.js:4:58)\n    at <anonymous>",
+                                  "type": "custom validation function"
+                              },
+                              "pass": false
                           },
-                          "id": "body assertion",
-                          "pass": true,
+                          "id": "body fn assertion error",
+                          "pass": false,
                           "request": {
                               "json": true,
                               "method": "GET",
@@ -123,22 +127,6 @@ const json =
                               "simple": false,
                               "timeout": 30000,
                               "url": "http://localhost:7778/body-assertion"
-                          }
-                      },
-                      {
-                          "id": "status assertion",
-                          "pass": true,
-                          "request": {
-                              "json": true,
-                              "method": "GET",
-                              "resolveWithFullResponse": true,
-                              "simple": false,
-                              "timeout": 30000,
-                              "url": "http://localhost:7778/status-assertion"
-                          },
-                          "status": {
-                              "actual": 404,
-                              "pass": true
                           }
                       }
                   ]
@@ -206,8 +194,8 @@ const json =
                   ]
               },
               {
-                  "id": "ts1",
-                  "pass": true,
+                  "id": "ts2",
+                  "pass": false,
                   "tests": [
                       {
                           "body": {
@@ -236,10 +224,15 @@ const json =
                                       }
                                   }
                               },
-                              "pass": true
+                              "error": {
+                                  "error": "you should see this error!",
+                                  "stack": "Error: you should see this error!\n    at RESTTestExpect.body (/Users/212589146/dev/busybee/busybee/test/IT/fixtures/mixed-test-suite-type/REST/test/ts2/body-assertion.js:15:17)\n    at RESTSuiteManager.validateTestResult (/Users/212589146/dev/busybee/busybee/src/managers/RESTSuiteManager.ts:380:40)\n    at RESTSuiteManager.<anonymous> (/Users/212589146/dev/busybee/busybee/src/managers/RESTSuiteManager.ts:170:16)\n    at step (/Users/212589146/dev/busybee/busybee/dist/src/managers/RESTSuiteManager.js:32:23)\n    at Object.next (/Users/212589146/dev/busybee/busybee/dist/src/managers/RESTSuiteManager.js:13:53)\n    at fulfilled (/Users/212589146/dev/busybee/busybee/dist/src/managers/RESTSuiteManager.js:4:58)\n    at <anonymous>",
+                                  "type": "custom validation function"
+                              },
+                              "pass": false
                           },
-                          "id": "body assertion",
-                          "pass": true,
+                          "id": "body fn assertion error",
+                          "pass": false,
                           "request": {
                               "json": true,
                               "method": "GET",
@@ -247,22 +240,6 @@ const json =
                               "simple": false,
                               "timeout": 30000,
                               "url": "http://localhost:7778/body-assertion"
-                          }
-                      },
-                      {
-                          "id": "status assertion",
-                          "pass": true,
-                          "request": {
-                              "json": true,
-                              "method": "GET",
-                              "resolveWithFullResponse": true,
-                              "simple": false,
-                              "timeout": 30000,
-                              "url": "http://localhost:7778/status-assertion"
-                          },
-                          "status": {
-                              "actual": 404,
-                              "pass": true
                           }
                       }
                   ]
@@ -294,6 +271,6 @@ const json =
           "type": "USER_PROVIDED"
       }
   ],
-  "runId": "2c20bdb0-a240-11e8-a01a-f5a56da9374b",
-  "runTimestamp": 1534525713674
+  "runId": "91b44920-a7b9-11e8-a960-4d43603081ac",
+  "runTimestamp": 1535127609009
 };

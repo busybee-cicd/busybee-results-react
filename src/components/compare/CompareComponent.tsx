@@ -5,6 +5,7 @@ import { Button, ButtonGroup } from 'reactstrap';
 import cx from 'classnames';
 import style from './CompareStyle.css';
 import * as _ from 'lodash';
+import ReactJson from 'react-json-view';
 
 export interface CompareComponentProps {
   expected: any,
@@ -35,7 +36,7 @@ export default class CompareComponent extends React.Component<CompareComponentPr
     return (
       <Button
         size='xs'
-        color="error"
+        color="danger"
         onClick={() => this.setState({selected: 'error'})}
         active={this.state.selected === 'error'}>Error</Button>
     )
@@ -85,6 +86,21 @@ export default class CompareComponent extends React.Component<CompareComponentPr
     );
   }
 
+  getErrorComponent() {
+    if (!this.props.error) { return; }
+
+    const style = cx({
+      'd-none': this.state.selected !== 'error',
+      'w-100': true
+    });
+
+    return (
+      <div className={style}>
+        <ReactJson name='error' src={this.props.error} />
+      </div>
+    )
+  }
+
   render() {
 
     let Nav;
@@ -117,6 +133,7 @@ export default class CompareComponent extends React.Component<CompareComponentPr
         <div className='d-flex flex-row'>
           {this.getSideBySideComponent()}
           {this.getDiffComponent()}
+          {this.getErrorComponent()}
         </div>
       </div>
     )

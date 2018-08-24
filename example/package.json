@@ -1,6 +1,6 @@
 {
-  "name": "busybee-result-react-example",
-  "homepage": "https://stowns.github.io/busybee-result-react",
+  "name": "busybee-results-react-example",
+  "homepage": "https://stowns.github.io/busybee-results-react",
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
@@ -10,7 +10,7 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "^1.1.4",
-    "busybee-result-react": "link:.."
+    "busybee-results-react": "link:.."
   },
   "scripts": {
     "dev": "react-scripts start",

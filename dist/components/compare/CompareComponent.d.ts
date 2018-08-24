@@ -14,6 +14,7 @@ export default class CompareComponent extends React.Component<CompareComponentPr
     getDiffBtn(): JSX.Element | undefined;
     getSideBySideComponent(): JSX.Element;
     getDiffComponent(): JSX.Element | undefined;
+    getErrorComponent(): JSX.Element | undefined;
     render(): JSX.Element;
 }
 export {};

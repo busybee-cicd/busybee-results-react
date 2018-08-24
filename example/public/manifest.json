@@ -1,6 +1,6 @@
 {
-  "short_name": "busybee-result-react",
-  "name": "busybee-result-react",
+  "short_name": "busybee-results-react",
+  "name": "busybee-results-react",
   "start_url": "./index.html",
   "display": "standalone",
   "theme_color": "#000000",
