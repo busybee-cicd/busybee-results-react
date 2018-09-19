@@ -61,5 +61,8 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "publishConfig": {
+    "registry": "https://devcloud.swcoe.ge.com/artifactory/api/npm/OAMFZ/"
+  }
 }
