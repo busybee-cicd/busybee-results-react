@@ -1,10 +1,10 @@
 {
   "name": "busybee-results-react",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a component for rendering a BusybeeTestResults object",
   "author": "stowns",
   "license": "MIT",
-  "repository": "git@github.build.ge.com:Busybee/busybee-results-react.git",
+  "repository": "https://github.build.ge.com/Busybee/busybee-results-react",
   "main": "dist/index.js",
   "engines": {
     "node": ">=8",
