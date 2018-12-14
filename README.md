@@ -8,19 +8,20 @@
 
 ```bash
 npm install --save busybee-results-react
+npm install --save bootstrap
 ```
 
 ## Usage
 
 ```tsx
 import * as React from 'react'
-
-import MyComponent from 'busybee-results-react'
+import 'bootstrap/dist/css/bootstrap.css';
+import BusybeeResultsReact from 'busybee-results-react'
 
 class Example extends React.Component {
   render () {
     return (
-      <MyComponent />
+      <BusybeeResultsReact />
     )
   }
 }

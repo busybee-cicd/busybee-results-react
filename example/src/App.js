@@ -17,6 +17,11 @@ const json = {
       {
           "id": "REST TestSuite",
           "pass": false,
+          "summary": {
+            "numberOfPassedTests": 4,
+            "numberOfTestSets": 4,
+            "numberOfTests": 6
+          },
           "testSets": [
               {
                   "id": "ts1",
