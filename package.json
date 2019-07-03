@@ -4,7 +4,7 @@
   "description": "a component for rendering a BusybeeTestResults object",
   "author": "stowns",
   "license": "MIT",
-  "repository": "https://github.build.ge.com/Busybee/busybee-results-react",
+  "repository": "https://github.com/busybee-cicd/busybee-results-react",
   "main": "dist/index.js",
   "engines": {
     "node": ">=8",
@@ -63,8 +63,5 @@
   },
   "files": [
     "dist"
-  ],
-  "publishConfig": {
-    "registry": "https://devcloud.swcoe.ge.com/artifactory/api/npm/OAMFZ/"
-  }
+  ]
 }

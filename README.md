@@ -28,5 +28,4 @@ class Example extends React.Component {
 ```
 
 ## License
-
 MIT © [stowns](https://github.com/stowns)
