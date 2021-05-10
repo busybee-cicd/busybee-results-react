@@ -1281,8 +1281,18 @@ builtin-status-codes@^3.0.0:
   resolved "https://registry.yarnpkg.com/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
 
 "busybee-results-react@link:..":
-  version "0.0.0"
-  uid ""
+  version "1.1.0"
+  dependencies:
+    "@fortawesome/fontawesome-svg-core" "^1.2.2"
+    "@fortawesome/free-solid-svg-icons" "^5.2.0"
+    "@fortawesome/react-fontawesome" "^0.1.2"
+    classnames "^2.2.6"
+    jsondiffpatch-for-react "^1.0.3"
+    lodash "^4.17.10"
+    moment "^2.22.2"
+    react-fontawesome "^1.6.1"
+    react-json-view "^1.19.1"
+    reactstrap "^6.3.1"
 
 bytes@3.0.0:
   version "3.0.0"
@@ -3215,8 +3225,8 @@ homedir-polyfill@^1.0.1:
     parse-passwd "^1.0.0"
 
 hosted-git-info@^2.1.4:
-  version "2.7.1"
-  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.7.1.tgz#97f236977bd6e125408930ff6de3eec6281ec047"
+  version "2.8.9"
+  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.9.tgz#dffc0bf9a21c02209090f2aa69429e1414daf3f9"
 
 hpack.js@^2.1.6:
   version "2.1.6"
