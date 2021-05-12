@@ -1281,8 +1281,18 @@ builtin-status-codes@^3.0.0:
   resolved "https://registry.yarnpkg.com/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
 
 "busybee-results-react@link:..":
-  version "0.0.0"
-  uid ""
+  version "1.1.0"
+  dependencies:
+    "@fortawesome/fontawesome-svg-core" "^1.2.2"
+    "@fortawesome/free-solid-svg-icons" "^5.2.0"
+    "@fortawesome/react-fontawesome" "^0.1.2"
+    classnames "^2.2.6"
+    jsondiffpatch-for-react "^1.0.3"
+    lodash "^4.17.10"
+    moment "^2.22.2"
+    react-fontawesome "^1.6.1"
+    react-json-view "^1.19.1"
+    reactstrap "^6.3.1"
 
 bytes@3.0.0:
   version "3.0.0"
@@ -4477,8 +4487,8 @@ merge-descriptors@1.0.1:
   resolved "https://registry.yarnpkg.com/merge-descriptors/-/merge-descriptors-1.0.1.tgz#b00aaa556dd8b44568150ec9d1b953f3f90cbb61"
 
 merge@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/merge/-/merge-1.2.0.tgz#7531e39d4949c281a66b8c5a6e0265e8b05894da"
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/merge/-/merge-1.2.1.tgz#38bebf80c3220a8a487b6fcfb3941bb11720c145"
 
 methods@~1.1.2:
   version "1.1.2"
