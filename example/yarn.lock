@@ -1281,8 +1281,18 @@ builtin-status-codes@^3.0.0:
   resolved "https://registry.yarnpkg.com/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
 
 "busybee-results-react@link:..":
-  version "0.0.0"
-  uid ""
+  version "1.1.0"
+  dependencies:
+    "@fortawesome/fontawesome-svg-core" "^1.2.2"
+    "@fortawesome/free-solid-svg-icons" "^5.2.0"
+    "@fortawesome/react-fontawesome" "^0.1.2"
+    classnames "^2.2.6"
+    jsondiffpatch-for-react "^1.0.3"
+    lodash "^4.17.10"
+    moment "^2.22.2"
+    react-fontawesome "^1.6.1"
+    react-json-view "^1.19.1"
+    reactstrap "^6.3.1"
 
 bytes@3.0.0:
   version "3.0.0"
@@ -6921,8 +6931,8 @@ uri-js@^4.2.1:
     punycode "^2.1.0"
 
 urijs@^1.16.1:
-  version "1.19.1"
-  resolved "https://registry.yarnpkg.com/urijs/-/urijs-1.19.1.tgz#5b0ff530c0cbde8386f6342235ba5ca6e995d25a"
+  version "1.19.10"
+  resolved "https://registry.yarnpkg.com/urijs/-/urijs-1.19.10.tgz#8e2fe70a8192845c180f75074884278f1eea26cb"
 
 urix@^0.1.0:
   version "0.1.0"
