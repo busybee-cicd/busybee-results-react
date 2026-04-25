@@ -1,19 +1,16 @@
 import typescript from 'rollup-plugin-typescript2'
-import commonjs from 'rollup-plugin-commonjs'
+import commonjs from '@rollup/plugin-commonjs'
 import external from 'rollup-plugin-peer-deps-external'
-import postcss from 'rollup-plugin-postcss-modules'
-import resolve from 'rollup-plugin-node-resolve'
-import url from 'rollup-plugin-url'
-// import sass from 'rollup-plugin-sass';;
-
-import pkg from './package.json'
+import postcss from 'rollup-plugin-postcss'
+import resolve from '@rollup/plugin-node-resolve'
+import url from '@rollup/plugin-url'
 
 export default {
   input: 'src/index.tsx',
   output: [
     {
-      file: pkg.main,
-      format: 'cjs',
+      file: 'dist/index.js',
+      format: 'esm',
       sourcemap: true
     }
   ],
@@ -23,19 +20,11 @@ export default {
       modules: {
         scopeBehaviour: 'local',
         globalModulePaths: [/node_modules/, /src\/global\/css/]
-      },
-      writeDefinitions: true
+      }
     }),
-    // sass(),
     url(),
     resolve(),
-    typescript({
-      rollupCommonJSResolveHack: true
-    }),
-    commonjs({
-      namedExports: {
-        'node_modules/lodash/lodash.js': ['isEmpty', 'reject', 'upperFirst']
-      }
-    })
+    typescript(),
+    commonjs()
   ]
 }

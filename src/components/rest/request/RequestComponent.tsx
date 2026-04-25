@@ -4,7 +4,7 @@
 
 import cx from 'classnames';
 import * as React from 'react';
-import ReactJson from 'react-json-view';
+import ReactJson from '@microlink/react-json-view';
 import { Collapse } from 'reactstrap';
 import style from './RequestStyle.css';
 

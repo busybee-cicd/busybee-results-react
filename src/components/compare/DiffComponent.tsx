@@ -1,7 +1,6 @@
 import cx from 'classnames';
-import JsonDiffReact from 'jsondiffpatch-for-react';
 import * as React from 'react';
-import { FormGroup, Input, Label } from 'reactstrap';
+import { VirtualDiffViewer } from 'virtual-react-json-diff';
 import style from './DiffStyle.css';
 
 export interface DiffComponentProps {
@@ -9,38 +8,15 @@ export interface DiffComponentProps {
   actual: any
 }
 
-interface DiffComponentState {
-  showUnchanged: boolean
-}
-
-export default class StatusComponent extends React.Component<DiffComponentProps, DiffComponentState> {
-
-  constructor(props:DiffComponentProps) {
-    super(props);
-
-    this.state = {
-      showUnchanged: true
-    }
-  }
+export default class StatusComponent extends React.Component<DiffComponentProps> {
 
   render() {
     return (
       <div className={cx(style.status, 'd-flex flex-column')}>
-        <div className={cx(style.nav, 'd-flex')}>
-          <FormGroup check>
-            <Label check>
-              <Input
-                type="checkbox"
-                checked={this.state.showUnchanged}
-                onChange={() => { this.setState({showUnchanged: !this.state.showUnchanged})} } />
-              Show Unchanged
-            </Label>
-          </FormGroup>
-        </div>
-        <JsonDiffReact
-          left={this.props.expected}
-          right={this.props.actual}
-          show={this.state.showUnchanged}
+        <VirtualDiffViewer
+          oldValue={this.props.expected}
+          newValue={this.props.actual}
+          height={400}
         />
       </div>
     )

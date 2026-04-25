@@ -3,7 +3,7 @@ import * as React from 'react';
 import './index.css';
 import TestSuiteComponent from './components/TestSuiteComponent';
 // import style from './index.css';
-const moment = require('moment');
+import moment from 'moment';
 import {
   Navbar,
   NavbarBrand,
@@ -51,12 +51,12 @@ export default class BusybeeTestResultsComponent extends React.Component<Busybee
       <div>
         <Navbar dark color="dark" expand="md">
           <NavbarBrand>{moment(this.props.results.runTimestamp).format('MMMM DD YYYY, h:mm:ss a')}</NavbarBrand>
-          <Nav className="ml-auto" navbar>
+          <Nav className="ms-auto" navbar>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
                   TestSuites
                 </DropdownToggle>
-                <DropdownMenu right>
+                <DropdownMenu end>
                   {DropdownItems}
                 </DropdownMenu>
               </UncontrolledDropdown>

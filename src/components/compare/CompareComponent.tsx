@@ -5,7 +5,7 @@ import { Button, ButtonGroup } from 'reactstrap';
 import cx from 'classnames';
 import style from './CompareStyle.css';
 import * as _ from 'lodash';
-import ReactJson from 'react-json-view';
+import ReactJson from '@microlink/react-json-view';
 
 export interface CompareComponentProps {
   expected: any,

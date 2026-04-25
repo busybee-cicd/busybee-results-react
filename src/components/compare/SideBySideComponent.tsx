@@ -1,5 +1,5 @@
 import * as React from 'react';
-import ReactJson from 'react-json-view';
+import ReactJson from '@microlink/react-json-view';
 
 export interface SideBySideComponentProps {
   expected: any,
