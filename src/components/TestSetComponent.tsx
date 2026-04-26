@@ -1,9 +1,9 @@
 import cx from 'classnames';
 import * as React from 'react';
-import { Collapse, Row } from 'reactstrap';
+import { Collapse } from 'reactstrap';
 import PassFailIconComponent from './PassFailIconComponent';
 import RESTTestComponent from './rest/RESTTestComponent';
-import style from './TestSetStyle.css';
+import style from './TestSetStyle.module.css';
 
 export interface TestSetComponentProps {
   suiteType: string,
@@ -55,18 +55,18 @@ export default class TestSetComponent extends React.Component<TestSetComponentPr
     }
 
     return (
-      <Row>
-        <div className={cx(style.testSet, 'd-flex', 'w-100', 'flex-column')}>
+      <div className={cx(style.testSet, 'd-flex', 'w-100', 'flex-column')}>
           <div className={cx(style.header, 'd-flex', 'align-items-center', 'w-100')} onClick={this.toggleOpen.bind(this)}>
             <div className={style.title}>{ts.id}</div>
             <PassFailIconComponent pass={this.props.set.pass} />
           </div>
           <Collapse isOpen={this.state.isOpen}>
-            {Tests}
-            {Errors}
+            <div className={style.tests}>
+              {Tests}
+              {Errors}
+            </div>
           </Collapse>
-        </div>
-      </Row>
+      </div>
     )
   }
 }

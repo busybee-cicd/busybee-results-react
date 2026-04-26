@@ -4,7 +4,7 @@ import { Collapse } from 'reactstrap';
 import PassFailIconComponent from '../PassFailIconComponent';
 import RequestComponent from './request/RequestComponent';
 import ResponseComponent from './response/ResponseComponent';
-import style from './RESTTestStyle.css';
+import style from './RESTTestStyle.module.css';
 
 export interface RESTTestComponentProps {
   test: any

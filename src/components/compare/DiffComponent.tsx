@@ -1,7 +1,7 @@
 import cx from 'classnames';
 import * as React from 'react';
 import { VirtualDiffViewer } from 'virtual-react-json-diff';
-import style from './DiffStyle.css';
+import style from './DiffStyle.module.css';
 
 export interface DiffComponentProps {
   expected: any,

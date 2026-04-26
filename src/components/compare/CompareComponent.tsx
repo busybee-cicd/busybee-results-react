@@ -3,7 +3,7 @@ import DiffComponent from './DiffComponent';
 import SideBySideComponent from './SideBySideComponent';
 import { Button, ButtonGroup } from 'reactstrap';
 import cx from 'classnames';
-import style from './CompareStyle.css';
+import style from './CompareStyle.module.css';
 import * as _ from 'lodash';
 import ReactJson from '@microlink/react-json-view';
 

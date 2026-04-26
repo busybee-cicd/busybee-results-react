@@ -1,9 +1,14 @@
 .rest-test {
-  box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
+  margin-bottom: 0.5em;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 3px rgba(10,10,10,.1);
+  cursor: pointer;
 }
 
 .rest-test > .test-header {
-  background-color: #7277FF;
+  background-color: #408DD4;
   color: white;
   padding: 0 .5em 0 .5em;
   cursor: pointer;

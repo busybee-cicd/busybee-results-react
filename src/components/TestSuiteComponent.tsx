@@ -1,7 +1,6 @@
 import * as React from 'react'
-import { Container, Row } from 'reactstrap';
 import TestSetComponent from './TestSetComponent';
-import style from './TestSuiteStyle.css';
+import style from './TestSuiteStyle.module.css';
 
 export interface TestSuiteComponentProps {
   suite: any
@@ -19,15 +18,13 @@ export default class TestSuiteComponent extends React.Component<TestSuiteCompone
     let percentPassing = Math.round(ts.summary.numberOfPassedTests / ts.summary.numberOfTests * 100);
 
     return (
-      <Container>
-        <Row>
-          <div className={style.suiteHeader}>
-            <h2>{ts.id}</h2>
-            <div>{ts.summary.numberOfPassedTests}/{ts.summary.numberOfTests} Tests Passing ({percentPassing}%)</div>
-          </div>
-        </Row>
-        {Sets}
-      </Container>
+      <div className={style.suite}>
+        <div className={style.suiteHeader}>
+          <h4>{ts.id}</h4>
+          <div>{ts.summary.numberOfPassedTests}/{ts.summary.numberOfTests} Tests Passing ({percentPassing}%)</div>
+        </div>
+        <div className={style.sets}>{Sets}</div>
+      </div>
     )
   }
 }

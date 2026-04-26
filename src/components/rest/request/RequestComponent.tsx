@@ -6,7 +6,7 @@ import cx from 'classnames';
 import * as React from 'react';
 import ReactJson from '@microlink/react-json-view';
 import { Collapse } from 'reactstrap';
-import style from './RequestStyle.css';
+import style from './RequestStyle.module.css';
 
 export interface RequestComponentProps {
   request: any

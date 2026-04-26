@@ -19,6 +19,7 @@ export default {
     postcss({
       modules: {
         scopeBehaviour: 'local',
+        localsConvention: 'camelCase',
         globalModulePaths: [/node_modules/, /src\/global\/css/]
       }
     }),

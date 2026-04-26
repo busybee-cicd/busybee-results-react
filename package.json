@@ -1,6 +1,6 @@
 {
   "name": "busybee-results-react",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "a component for rendering a BusybeeTestResults object",
   "author": "stowns",
   "license": "MIT",
@@ -23,7 +23,8 @@
     "test:watch": "vitest",
     "clean": "rm -rf dist",
     "build": "npm run clean && rollup -c",
-    "dev": "rollup -c -w",
+    "dev": "cd example && npm run dev",
+    "predeploy": "npm run build && cd example && npm install && npm run build",
     "deploy": "gh-pages -d example/build"
   },
   "dependencies": {
@@ -43,6 +44,7 @@
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
+    "@testing-library/react": "^16.3.2",
     "@rollup/plugin-commonjs": "^29.0.2",
     "@rollup/plugin-node-resolve": "^16.0.3",
     "@rollup/plugin-url": "^8.0.2",

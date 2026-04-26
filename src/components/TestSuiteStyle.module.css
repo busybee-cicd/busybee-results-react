@@ -1,0 +1,19 @@
+.suite {
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.sets {
+  padding: 0 1.5rem;
+}
+
+.suite-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: .5em .5em 0 .5em;
+  background-color: #343a40;
+  color: white;
+  margin-bottom: 1em;
+}

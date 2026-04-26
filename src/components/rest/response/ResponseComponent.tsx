@@ -6,7 +6,7 @@ import * as React from 'react';
 import { Collapse, Nav, NavItem, NavLink, TabContent, TabPane } from 'reactstrap';
 import CompareComponent from '../../compare/CompareComponent';
 import PassFailIconComponent from '../../PassFailIconComponent';
-import style from './ResponseStyle.css';
+import style from './ResponseStyle.module.css';
 
 export interface ResponseComponentProps {
   status: any;
